@@ -1,3 +1,5 @@
+# !pip install pycryptodome
+
 import binascii
 from Crypto import Random
 from Crypto.PublicKey import RSA
@@ -44,3 +46,4 @@ print("\nEncrypted Message (ciphertext):", encrypted_message)
 # Receiver decrypts using his PRIVATE key
 decrypted_message = receiver.decrypt_message(encrypted_message)
 print("\nDecrypted Message (plain text):", decrypted_message)
+
